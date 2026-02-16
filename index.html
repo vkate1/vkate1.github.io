@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Vandana Kate - Professor & AI Researcher</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Dr. Vandana Kate</div>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>Dr. Vandana Kate</span>
+            </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -30,22 +41,44 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Dr. Vandana Kate</h1>
-            <p class="hero-subtitle">Professor | Technical Mentor | AI & ML Specialist</p>
-            <p class="hero-institution">Acropolis Institute of Technology and Research, Indore</p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">23+</span>
-                    <span class="stat-label">Years Experience</span>
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <i class="fas fa-user-graduate"></i>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">60+</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Dr. Vandana Kate</span>
+            </h1>
+            <div class="typing-container">
+                <p class="hero-subtitle" id="typewriter"></p>
+            </div>
+            <p class="hero-institution">
+                <i class="fas fa-university"></i> Acropolis Institute of Technology and Research
+            </p>
+            <div class="hero-stats">
+                <div class="stat glass-card">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <span class="stat-number" data-count="23">0</span>+
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat glass-card">
+                    <div class="stat-icon"><i class="fas fa-book"></i></div>
+                    <span class="stat-number" data-count="60">0</span>+
                     <span class="stat-label">Publications</span>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">Ph.D.</span>
-                    <span class="stat-label">Computer Engineering</span>
+                <div class="stat glass-card">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <span class="stat-text">Ph.D.</span>
+                    <span class="stat-label">Doctorate</span>
                 </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-arrow-down"></i> Learn More
+                </a>
             </div>
         </div>
     </section>
@@ -53,30 +86,70 @@
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p class="about-text">
-                    Highly experienced and dedicated Engineering Professor with a proven track record in teaching, 
-                    administration, and industry collaboration. Skilled at simplifying complex engineering concepts 
-                    for diverse audiences, fostering student success through hands-on learning and real-world applications.
-                </p>
-                <p class="about-text">
-                    Expertise in Artificial Intelligence, Machine Learning, Deep Learning with applications in medical 
-                    image processing and image restoration. Strong commitment to guiding students toward academic and 
-                    professional growth, bridging academia and industry through cutting-edge initiatives.
-                </p>
+            <div class="section-header">
+                <span class="section-label">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-wrapper">
+                <div class="about-image-section">
+                    <div class="profile-card glass-effect">
+                        <div class="profile-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="mini-stat">
+                                <i class="fas fa-star"></i>
+                                <span>23+ Years</span>
+                            </div>
+                            <div class="mini-stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>Award Winner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <p class="about-text">
+                        <span class="highlight-text">Highly experienced and dedicated</span> Engineering Professor with a proven track record in teaching, 
+                        administration, and industry collaboration. Skilled at simplifying complex engineering concepts 
+                        for diverse audiences.
+                    </p>
+                    <p class="about-text">
+                        Expertise in <span class="highlight-text">AI, Machine Learning, Deep Learning</span> with applications in medical 
+                        image processing. Strong commitment to bridging academia and industry through cutting-edge initiatives.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Editor - International Journals</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Conference Co-Chair RAMSITA 2025</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>60+ Research Publications</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="research-areas">
-                <h3 class="subsection-title">Research Interests</h3>
+                <h3 class="subsection-title">
+                    <i class="fas fa-microscope"></i> Research Interests
+                </h3>
                 <div class="tags">
-                    <span class="tag">Artificial Intelligence</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Deep Learning</span>
-                    <span class="tag">Medical Image Processing</span>
-                    <span class="tag">Image Restoration</span>
-                    <span class="tag">Computer Vision</span>
-                    <span class="tag">Data Science</span>
+                    <span class="tag"><i class="fas fa-robot"></i> Artificial Intelligence</span>
+                    <span class="tag"><i class="fas fa-brain"></i> Machine Learning</span>
+                    <span class="tag"><i class="fas fa-network-wired"></i> Deep Learning</span>
+                    <span class="tag"><i class="fas fa-x-ray"></i> Medical Imaging</span>
+                    <span class="tag"><i class="fas fa-image"></i> Image Restoration</span>
+                    <span class="tag"><i class="fas fa-eye"></i> Computer Vision</span>
+                    <span class="tag"><i class="fas fa-chart-line"></i> Data Science</span>
                 </div>
             </div>
         </div>
@@ -85,49 +158,60 @@
     <!-- Experience Section -->
     <section id="experience" class="section experience">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <div class="section-header">
+                <span class="section-label">My Journey</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
             
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">August 2014 - Present</span>
+                    <div class="timeline-marker">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content glass-effect">
+                        <div class="timeline-badge">Current</div>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> Aug 2014 - Present</span>
                         <h3 class="timeline-title">Professor</h3>
-                        <h4 class="timeline-company">Acropolis Institute of Technology and Research, Indore</h4>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> Acropolis Institute of Technology</h4>
                         <ul class="timeline-list">
-                            <li>Editor for International Conference RAMSITA 2025</li>
-                            <li>Editorial roles in IJAITR and IJRMETS journals</li>
-                            <li>Managed RGPV examination records and academic reporting</li>
-                            <li>Contributed to patent/copyright filing and IP development</li>
-                            <li>Spearheaded curriculum innovation with emerging technologies</li>
+                            <li><i class="fas fa-angle-right"></i> Editor for International Conference RAMSITA 2025</li>
+                            <li><i class="fas fa-angle-right"></i> Editorial roles in IJAITR and IJRMETS journals</li>
+                            <li><i class="fas fa-angle-right"></i> Patent/copyright filing and IP development</li>
+                            <li><i class="fas fa-angle-right"></i> Curriculum innovation with emerging technologies</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">July 2007 - February 2014</span>
+                    <div class="timeline-marker">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="timeline-content glass-effect">
+                        <span class="timeline-date"><i class="far fa-calendar"></i> Jul 2007 - Feb 2014</span>
                         <h3 class="timeline-title">Reader</h3>
-                        <h4 class="timeline-company">S.D Bansal College of Technology, Indore</h4>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> S.D Bansal College of Technology</h4>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">July 2004 - September 2006</span>
+                    <div class="timeline-marker">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="timeline-content glass-effect">
+                        <span class="timeline-date"><i class="far fa-calendar"></i> Jul 2004 - Sep 2006</span>
                         <h3 class="timeline-title">Lecturer</h3>
-                        <h4 class="timeline-company">Shri Govindram Seksaria Institute of Technology and Science</h4>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> SGSITS</h4>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">July 2002 - September 2003</span>
+                    <div class="timeline-marker">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content glass-effect">
+                        <span class="timeline-date"><i class="far fa-calendar"></i> Jul 2002 - Sep 2003</span>
                         <h3 class="timeline-title">Lecturer</h3>
-                        <h4 class="timeline-company">Jabalpur Engineering College</h4>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> Jabalpur Engineering College</h4>
                     </div>
                 </div>
             </div>
@@ -137,35 +221,51 @@
     <!-- Education Section -->
     <section id="education" class="section education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <div class="section-header">
+                <span class="section-label">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
             
             <div class="education-grid">
-                <div class="education-card">
-                    <div class="degree-icon">🎓</div>
-                    <h3 class="degree-title">Ph.D. in Computer Engineering</h3>
-                    <p class="institution">IET, Devi Ahilya Vishwavidyalaya, Indore</p>
-                    <p class="year">2024</p>
+                <div class="education-card glass-effect">
+                    <div class="card-ribbon">Ph.D.</div>
+                    <div class="degree-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="degree-title">Ph.D. Computer Engineering</h3>
+                    <p class="institution"><i class="fas fa-university"></i> IET, DAVV, Indore</p>
+                    <p class="year"><i class="far fa-calendar-check"></i> 2024</p>
                     <div class="achievement">
-                        <span class="badge">First Position in PhD Coursework (SGPA 9.7/10)</span>
+                        <span class="badge"><i class="fas fa-medal"></i> First Position</span>
+                        <span class="badge"><i class="fas fa-chart-line"></i> SGPA 9.7/10</span>
                     </div>
                 </div>
 
-                <div class="education-card">
-                    <div class="degree-icon">🎓</div>
-                    <h3 class="degree-title">M.E. in Computer Engineering</h3>
-                    <p class="institution">IET, DAVV, Indore</p>
-                    <p class="year">2010</p>
+                <div class="education-card glass-effect">
+                    <div class="card-ribbon">M.E.</div>
+                    <div class="degree-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="degree-title">M.E. Computer Engineering</h3>
+                    <p class="institution"><i class="fas fa-university"></i> IET, DAVV, Indore</p>
+                    <p class="year"><i class="far fa-calendar-check"></i> 2010</p>
                     <div class="achievement">
-                        <span class="badge">Second Topper - 80.5%</span>
-                        <span class="badge">GATE 89 Percentile (2008)</span>
+                        <span class="badge"><i class="fas fa-trophy"></i> Second Topper</span>
+                        <span class="badge"><i class="fas fa-star"></i> GATE 89%</span>
                     </div>
                 </div>
 
-                <div class="education-card">
-                    <div class="degree-icon">🎓</div>
-                    <h3 class="degree-title">B.E. in Computer Science</h3>
-                    <p class="institution">Jabalpur Engineering College, RGPV</p>
-                    <p class="year">2002</p>
+                <div class="education-card glass-effect">
+                    <div class="card-ribbon">B.E.</div>
+                    <div class="degree-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="degree-title">B.E. Computer Science</h3>
+                    <p class="institution"><i class="fas fa-university"></i> RGPV, Jabalpur</p>
+                    <p class="year"><i class="far fa-calendar-check"></i> 2002</p>
+                    <div class="achievement">
+                        <span class="badge"><i class="fas fa-award"></i> CSE</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,78 +274,157 @@
     <!-- Skills Section -->
     <section id="skills" class="section skills">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="section-header">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Skills</h2>
+            </div>
             
             <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon">🤖</div>
-                    <h3 class="skill-title">AI & Machine Learning</h3>
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-bg">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="skill-title">AI & ML</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Artificial Intelligence</li>
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>Neural Networks</li>
-                        <li>Computer Vision</li>
+                        <li>
+                            <span class="skill-name"><i class="fas fa-brain"></i> Artificial Intelligence</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fas fa-project-diagram"></i> Machine Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fas fa-network-wired"></i> Deep Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="skill-category">
-                    <div class="skill-icon">☁️</div>
-                    <h3 class="skill-title">Cloud Technologies</h3>
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-bg">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="skill-title">Cloud Tech</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>AWS Solution Architect</li>
-                        <li>Microsoft Azure AI & Cloud</li>
-                        <li>Alibaba Cloud Developer</li>
-                        <li>Cloud Computing</li>
+                        <li>
+                            <span class="skill-name"><i class="fab fa-aws"></i> AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fab fa-microsoft"></i> Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fas fa-cloud-upload-alt"></i> Alibaba Cloud</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="skill-category">
-                    <div class="skill-icon">💻</div>
-                    <h3 class="skill-title">Core Computer Science</h3>
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-bg">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="skill-title">Core CS</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Data Structures & Algorithms</li>
-                        <li>Operating Systems</li>
-                        <li>Software Engineering</li>
-                        <li>Theory of Computation</li>
-                        <li>Compiler Design</li>
+                        <li>
+                            <span class="skill-name"><i class="fas fa-sitemap"></i> DSA</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="93"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fas fa-cogs"></i> OS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fas fa-tools"></i> Software Engg</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="91"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="skill-category">
-                    <div class="skill-icon">🐍</div>
-                    <h3 class="skill-title">Programming & Tools</h3>
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-bg">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-title">Programming</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>R Programming</li>
-                        <li>MATLAB</li>
-                        <li>Statistical Analysis</li>
+                        <li>
+                            <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="94"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fab fa-java"></i> Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name"><i class="fab fa-r-project"></i> R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Certifications Highlight -->
+            <!-- Certifications -->
             <div class="certifications-highlight">
-                <h3 class="subsection-title">Key Certifications</h3>
+                <h3 class="subsection-title">
+                    <i class="fas fa-certificate"></i> Key Certifications
+                </h3>
                 <div class="cert-badges">
                     <div class="cert-badge">
+                        <div class="cert-icon"><i class="fab fa-aws"></i></div>
                         <span class="cert-name">AWS Solution Architect</span>
-                        <span class="cert-org">Amazon Web Services</span>
+                        <span class="cert-org">Amazon</span>
                     </div>
                     <div class="cert-badge">
+                        <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
                         <span class="cert-name">Azure AI Fundamentals</span>
                         <span class="cert-org">Microsoft</span>
                     </div>
                     <div class="cert-badge">
-                        <span class="cert-name">Alibaba Cloud Developer</span>
-                        <span class="cert-org">Alibaba Cloud</span>
+                        <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                        <span class="cert-name">Cloud Developer</span>
+                        <span class="cert-org">Alibaba</span>
                     </div>
                     <div class="cert-badge">
-                        <span class="cert-name">Deep Learning Specialization</span>
+                        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                        <span class="cert-name">Deep Learning</span>
                         <span class="cert-org">Coursera</span>
                     </div>
                     <div class="cert-badge">
+                        <div class="cert-icon"><i class="fas fa-cube"></i></div>
                         <span class="cert-name">Blockchain Builder</span>
                         <span class="cert-org">IIT Delhi</span>
                     </div>
@@ -257,36 +436,49 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:vandanakate@acropolis.in">vandanakate@acropolis.in</a>
-                        </div>
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item glass-effect">
+                    <div class="contact-icon gradient-bg">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <a href="tel:+919826070064">+91 9826070064</a>
-                        </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:vandanakate@acropolis.in">vandanakate@acropolis.in</a>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <a href="https://linkedin.com/in/vandana-kate-31b887b6" target="_blank">vandana-kate</a>
-                        </div>
+                </div>
+                
+                <div class="contact-item glass-effect">
+                    <div class="contact-icon gradient-bg">
+                        <i class="fas fa-phone-alt"></i>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Indore, Madhya Pradesh, India</p>
-                        </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:+919826070064">+91 9826070064</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item glass-effect">
+                    <div class="contact-icon gradient-bg">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/vandana-kate-31b887b6" target="_blank">vandana-kate</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item glass-effect">
+                    <div class="contact-icon gradient-bg">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Indore, MP, India</p>
                     </div>
                 </div>
             </div>
