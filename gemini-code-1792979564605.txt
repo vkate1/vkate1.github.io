@@ -1,0 +1,21 @@
+my-ml-course-repo/
+├── index.html
+├── style.css
+├── script.js
+└── pdfs/
+    ├── unit1/
+    │   ├── 1-1-intro-to-ml.pdf
+    │   ├── 1-2-scope-limitations.pdf
+    │   └── ... (up to 1-14-supervised-unsupervised.pdf)
+    ├── unit2/
+    │   ├── 2-1-linearity-nonlinearity.pdf
+    │   └── ... (up to 2-16-hyperparameter-tuning.pdf)
+    ├── unit3/
+    │   ├── 3-1-cnn.pdf
+    │   └── ... (up to 3-12-cnn-tensorflow-keras.pdf)
+    ├── unit4/
+    │   ├── 4-1-rnn.pdf
+    │   └── ... (up to 4-12-sarsa.pdf)
+    └── unit5/
+        ├── 5-1-svm.pdf
+        └── ... (up to 5-6-imagenet-case-study.pdf)
